@@ -346,7 +346,7 @@ uvicorn main:app --reload --port 8000
 ## 프로젝트 구조
 
 ```
-ktas-triage-ai/
+KTAS-triage-ai/
 ├── README.md                       # (본 문서) 전체 총정리
 ├── LICENSE                         # MIT
 ├── requirements.txt
