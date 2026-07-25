@@ -1,0 +1,17 @@
+# KTAS 응급 중증도 분류 + 진료과 추천 시스템 — 의존성
+# 설치: pip install -r requirements.txt   (Python 3.10+ 권장)
+
+# ── 공통 (학습 · 서빙 모두 필요) ──
+torch>=2.1
+transformers>=4.40
+scikit-learn>=1.3
+pandas>=2.0
+numpy>=1.24
+
+# ── 학습 파이프라인 (AI_modeling/) ──
+optuna>=3.5            # 하이퍼파라미터 탐색
+
+# ── 서빙 (ktas_backend/) ──
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.0

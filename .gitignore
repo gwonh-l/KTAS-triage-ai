@@ -1,0 +1,29 @@
+# ── 모델 가중치 (GitHub 파일당 100MB 제한 초과) ─────────────
+# backbone 가중치 422MB. README > 설치 > "모델 가중치 준비" 참조.
+# task_heads.pt / tokenizer.json / *.json 은 작으므로 커밋합니다.
+ktas_backend/ktas_ai_model/model.safetensors
+
+# ── 가상환경 ────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Python ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ── IDE ────────────────────────────────────────────────
+.idea/
+.vscode/
+
+# ── macOS ──────────────────────────────────────────────
+.DS_Store
+
+# ── 학습 중간 산출물 ─────────────────────────────────────
+*.log
+optuna_study.db
+runs/
+wandb/

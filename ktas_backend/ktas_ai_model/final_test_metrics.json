@@ -1,0 +1,127 @@
+{
+  "test_macro_f1": 0.7498,
+  "test_k3_recall": 0.8059,
+  "test_k4_recall": 0.6406,
+  "test_k5_recall": 0.53,
+  "test_k3_under_triage": 14,
+  "test_k3_under_triage_rate": 0.0344,
+  "test_k4_over_triage": 131,
+  "test_k4_over_triage_rate": 0.3203,
+  "acs_cot_pass_on_test": true,
+  "dept_accuracy": 0.8821,
+  "dept_valid_count": 509,
+  "dept_per_class_accuracy": {
+    "내과": 0.8322,
+    "비뇨기과": 0.9074,
+    "산부인과": 0.8148,
+    "신경과": 0.9583,
+    "안과": 1.0,
+    "이비인후과": 0.9531,
+    "정신건강의학과": 0.7857,
+    "정형외과": 0.931,
+    "피부과": 0.8571,
+    "외과": 0.7692,
+    "소아과": 0.9412
+  },
+  "dept_classes": [
+    "내과",
+    "비뇨기과",
+    "산부인과",
+    "신경과",
+    "안과",
+    "이비인후과",
+    "정신건강의학과",
+    "정형외과",
+    "피부과",
+    "외과",
+    "소아과"
+  ],
+  "classification_report": {
+    "K1": {
+      "precision": 0.8387096774193549,
+      "recall": 0.896551724137931,
+      "f1-score": 0.8666666666666667,
+      "support": 87.0
+    },
+    "K2": {
+      "precision": 0.8439306358381503,
+      "recall": 0.8279773156899811,
+      "f1-score": 0.8358778625954199,
+      "support": 529.0
+    },
+    "K3": {
+      "precision": 0.6018348623853211,
+      "recall": 0.8058968058968059,
+      "f1-score": 0.6890756302521008,
+      "support": 407.0
+    },
+    "K4": {
+      "precision": 0.8590163934426229,
+      "recall": 0.6405867970660146,
+      "f1-score": 0.7338935574229691,
+      "support": 409.0
+    },
+    "K5": {
+      "precision": 0.7571428571428571,
+      "recall": 0.53,
+      "f1-score": 0.6235294117647059,
+      "support": 100.0
+    },
+    "accuracy": 0.7565274151436031,
+    "macro avg": {
+      "precision": 0.7801268852456612,
+      "recall": 0.7402025285581466,
+      "f1-score": 0.7498086257403724,
+      "support": 1532.0
+    },
+    "weighted avg": {
+      "precision": 0.7776800443322518,
+      "recall": 0.7565274151436031,
+      "f1-score": 0.7575382356318845,
+      "support": 1532.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      78,
+      8,
+      1,
+      0,
+      0
+    ],
+    [
+      14,
+      438,
+      75,
+      2,
+      0
+    ],
+    [
+      1,
+      64,
+      328,
+      13,
+      1
+    ],
+    [
+      0,
+      8,
+      123,
+      262,
+      16
+    ],
+    [
+      0,
+      1,
+      18,
+      28,
+      53
+    ]
+  ],
+  "threshold_k4": 0.88,
+  "temperature": 1.178,
+  "entropy_threshold": 1.2825,
+  "best_epoch": 6,
+  "split_version": 4,
+  "split_path": "./ktas_split.json"
+}
