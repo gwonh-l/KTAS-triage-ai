@@ -151,7 +151,7 @@
 4. `all_insert.py` — 성인/소아 병합 + `age_group` 부여 → `ktas_dataset.csv`
 5. GPT로 각 증상에 대응하는 가상 환자 발화 생성·증강 → `ktas_training_data_final.csv`
 
-> **본 저장소의 `ktas_training_data_final.csv`는 [ER-Data-Generator](https://github.com/gwonh-l/ER-Data-Generator)의 최종 산출물입니다.** 위 5단계 중 ①~④는 그 저장소에서 수행되며, 본 저장소에는 그 결과물만 가져와 학습에 사용했습니다.
+> **본 저장소의 `ktas_training_data_final.csv`는 [ER-Data-Generator](https://github.com/gwonh-l/ER-Data-Generator)의 최종 산출물입니다.** 위 5단계 중 ①~④는 그 저장소에서 수행되며, 본 저장소에는 그 결과물을 가져와 학습에 사용했습니다.
 > 가져온 파일은 원본과 **바이트 단위로 동일**합니다 (10,207행 / md5 `68abc7c2a5fae622ad4ccfef8af7ee03`).
 > ⚠️ ER-Data-Generator의 `최종산출물/` 폴더에도 **같은 이름의** `ktas_training_data_final.csv`가 있으나 이는 9,458행 구버전입니다. 본 저장소가 사용한 것은 **저장소 루트**에 있는 10,207행 파일입니다.
 
