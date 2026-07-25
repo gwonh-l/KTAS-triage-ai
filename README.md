@@ -60,12 +60,12 @@
 
 | 단계 | 구성요소 | 저장소 / 위치 | 설명 |
 |---|---|---|---|
-| ① 데이터 생성 | ER Data Generator | *(미공개)* | KTAS 분류표 기반 가상 증상 텍스트를 GPT로 생성·정제·증강 |
+| ① 데이터 생성 | ER Data Generator | [ER-Data-Generator](https://github.com/gwonh-l/ER-Data-Generator) | KTAS 분류표 기반 가상 증상 텍스트를 GPT로 생성·정제·증강 |
 | ② 모델 학습 | AI Modeling | `AI_modeling/` | Optuna 탐색 → 멀티태스크 BERT 학습 → test 평가 |
 | ③ 서빙 | Backend API | `ktas_backend/` | FastAPI 추론 서버 (`/predict`, `/health`) |
 | ④ 매칭 | (후속 시스템) | — | ETA 병상 예측 및 환자–병원 매칭 |
 
-> 데이터셋은 GPT로 생성한 **가상 데이터**이며 실제 환자 정보(PHI)를 포함하지 않습니다. 생성 파이프라인(프롬프트·증강 로직)은 현재 공개하지 않으며, 최종 산출물인 `ktas_training_data_final.csv`만 본 저장소에 포함되어 있습니다.
+> 데이터셋은 GPT로 생성한 **가상 데이터**이며 실제 환자 정보(PHI)를 포함하지 않습니다. 생성 프롬프트·정제·증강 로직 전체는 [ER-Data-Generator](https://github.com/gwonh-l/ER-Data-Generator) 저장소에 공개되어 있습니다.
 
 ---
 
@@ -383,7 +383,7 @@ KTAS-triage-ai/
         └── final_test_metrics.json #   test 평가 결과
 ```
 
-> 데이터 생성 파이프라인(GPT 증상 텍스트 생성)은 미공개이며, 최종 산출물인 CSV만 포함되어 있습니다.
+> 데이터 생성 파이프라인(GPT 증상 텍스트 생성)은 [ER-Data-Generator](https://github.com/gwonh-l/ER-Data-Generator) 저장소에 있으며, 본 저장소에는 최종 산출물 CSV만 포함되어 있습니다.
 > `ktas_training_data_final.csv`는 `AI_modeling/`·`ktas_backend/`에도 동일 사본이 있습니다(각 스크립트가 상대경로로 참조). 수정 시 세 곳을 함께 갱신하세요.
 
 ---
