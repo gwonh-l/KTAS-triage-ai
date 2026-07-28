@@ -7,6 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 2026년 동국대학교 공개SW프로젝트 - SMART ER
+
 데이터 구축, 모델 설계·학습, 임계치 보정, API 서빙 구현
 
 > 환자의 **자연어 증상 호소**를 입력받아 **KTAS 중증도(1~5등급)** 를 분류하고, 경증(K4·K5)에 대해 **진료과(11종)** 를 추천하는 멀티태스크 AI 서비스입니다.
