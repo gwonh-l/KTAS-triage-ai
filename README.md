@@ -6,7 +6,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-2026 DGU OSS-project
+2026 DGU OSSProj
 
 **데이터 구축, 모델 설계·학습, 임계치 보정, API 서빙 구현**
 
